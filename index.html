@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff7fb" />
+  <meta name="description" content="A little universe for Husen & Ike." />
+  <title>Husen & Ike — Our Little Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home" aria-label="Husen and Ike home">
+        <span class="brand-mark">h<span>&</span>i</span>
+        <span><b>our little universe</b><small>HUSEN ♡ IKE</small></span>
+      </a>
+      <div class="side-label">YOUR SPACE</div>
+      <nav class="nav">
+        <a class="nav-link active" href="#home" data-section="home"><span>⌂</span> Home</a>
+        <a class="nav-link" href="#games" data-section="games"><span>♟</span> Game room <i>08</i></a>
+        <a class="nav-link" href="#booth" data-section="booth"><span>▣</span> Photobooth</a>
+        <a class="nav-link" href="#memories" data-section="memories"><span>♡</span> Memories</a>
+        <a class="nav-link" href="#draw" data-section="draw"><span>✎</span> Drawing room</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="tiny-card">
+          <div class="tiny-icon">✦</div>
+          <b>A little reminder</b>
+          <p>Distance is just a number. Make today a little more memorable.</p>
+        </div>
+        <div class="profile-mini">
+          <div class="avatar avatar-h">H</div><div class="avatar avatar-i">I</div>
+          <div><b>Husen & Ike</b><small>our private corner</small></div>
+          <span class="online-dot"></span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand">h<span>&</span>i <small>OUR UNIVERSE</small></div>
+        <div class="breadcrumb">OUR SPACE <span>/</span> <b id="crumb">HOME</b></div>
+        <div class="top-actions">
+          <div class="status-pill"><span class="online-dot"></span> <span id="connection-status">Local preview</span></div>
+          <button class="icon-button" id="invite-top" aria-label="Invite Ike">♡</button>
+        </div>
+      </header>
+
+      <section class="page-section active-section" id="home">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="sparkle">✦</span> A PLACE THAT'S JUST OURS</div>
+            <h1>Two places.<br><em>One little</em> universe.</h1>
+            <p>A cozy corner for games, silly moments, tiny memories, and everything in between.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#games">Explore game room <span>↗</span></a>
+              <button class="btn btn-quiet" id="hero-invite">♡ Invite Ike</button>
+            </div>
+            <div class="hero-footnote"><span class="mini-heart">♥</span> made for Husen & Ike, with a little extra love</div>
+          </div>
+          <div class="hero-art">
+            <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+            <div class="moon">☾</div>
+            <div class="planet planet-pink"><span>H</span></div>
+            <div class="planet planet-cream"><span>I</span></div>
+            <div class="star star-a">✦</div><div class="star star-b">✧</div><div class="star star-c">✦</div>
+            <div class="floating-note note-top">same sky, different places ☁</div>
+            <div class="floating-note note-bottom">♡ together is a place</div>
+            <div class="art-caption">HUSEN <span>×</span> IKE</div>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div><div class="eyebrow">LET'S SPEND SOME TIME</div><h2>What shall we do today?</h2></div>
+          <span class="soft-tag">pick your little adventure ✿</span>
+        </div>
+        <div class="feature-grid">
+          <a class="feature-card feature-game" href="#games"><div class="feature-top"><span class="feature-icon">♟</span><span class="arrow">↗</span></div><div><h3>Play a game</h3><p>A little competition never hurt anyone.</p></div><div class="feature-decoration">✳</div></a>
+          <a class="feature-card feature-booth" href="#booth"><div class="feature-top"><span class="feature-icon">▣</span><span class="arrow">↗</span></div><div><h3>Take a picture</h3><p>Make a photo strip from wherever you are.</p></div><div class="feature-decoration">♡</div></a>
+          <a class="feature-card feature-draw" href="#draw"><div class="feature-top"><span class="feature-icon">✎</span><span class="arrow">↗</span></div><div><h3>Doodle together</h3><p>Draw something. Even if it's terrible.</p></div><div class="feature-decoration">〰</div></a>
+        </div>
+
+        <div class="lower-grid">
+          <div class="panel invite-panel">
+            <div class="panel-head"><div><div class="eyebrow">NOT IN THE SAME ROOM?</div><h3>Send a little invitation</h3></div><span class="panel-icon">✉</span></div>
+            <p>Start a private room and invite your favorite player to join.</p>
+            <button class="btn btn-dark" id="create-room">Create a room <span>↗</span></button>
+            <div class="room-hint">For now, room invitations are a visual demo. Supabase connection comes next.</div>
+          </div>
+          <div class="panel quote-panel">
+            <div class="quote-mark">“</div>
+            <p>Even on ordinary days, I’d still choose to make little memories with you.</p>
+            <span>— OUR LITTLE UNIVERSE</span>
+            <div class="quote-spark">✧</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section" id="games">
+        <div class="page-intro"><div class="eyebrow">THE FUN PART</div><h1>Game <em>room.</em></h1><p>Pick a game, invite your player, and let the friendly rivalry begin.</p></div>
+        <div class="game-toolbar"><div class="search-wrap"><span>⌕</span><input id="game-search" placeholder="Find a game..." /></div><div class="filter-pills"><button class="filter active" data-filter="all">All games</button><button class="filter" data-filter="board">Board</button><button class="filter" data-filter="casual">Casual</button><button class="filter" data-filter="creative">Creative</button></div></div>
+        <div class="games-grid" id="games-grid">
+          <article class="game-card" data-name="snakes ladders ular tangga" data-category="board" data-icon="🐍" data-title="Snakes & Ladders"><div class="game-art art-ladder">🐍<span>🎲</span></div><div class="game-meta"><span>BOARD GAME</span><b>Snakes & Ladders</b><small>Roll the dice. Climb up. Try not to slide.</small></div><button class="play-button" data-game="Snakes & Ladders">Play together ↗</button></article>
+          <article class="game-card" data-name="ludo" data-category="board" data-icon="🎲" data-title="Ludo"><div class="game-art art-ludo">🔴🟡<br>🟢🔵</div><div class="game-meta"><span>BOARD GAME</span><b>Ludo</b><small>Race your pieces all the way home.</small></div><button class="play-button" data-game="Ludo">Play together ↗</button></article>
+          <article class="game-card" data-name="chess catur" data-category="board" data-icon="♞" data-title="Chess"><div class="game-art art-chess">♔ <span>♞</span> ♕</div><div class="game-meta"><span>STRATEGY</span><b>Chess</b><small>A little strategy, a lot of thinking.</small></div><button class="play-button" data-game="Chess">Play together ↗</button></article>
+          <article class="game-card" data-name="memory match" data-category="casual" data-icon="🧩" data-title="Memory Match"><div class="game-art art-memory">♡ ✦ ♡</div><div class="game-meta"><span>CASUAL</span><b>Memory Match</b><small>Find the matching pairs.</small></div><button class="play-button" data-game="Memory Match">Play together ↗</button></article>
+          <article class="game-card" data-name="tic tac toe" data-category="casual" data-icon="⭕" data-title="Tic Tac Toe"><div class="game-art art-tictac">× <span>○</span> ×</div><div class="game-meta"><span>QUICK PLAY</span><b>Tic Tac Toe</b><small>A tiny battle of three in a row.</small></div><button class="play-button" data-game="Tic Tac Toe">Play together ↗</button></article>
+          <article class="game-card" data-name="would you rather" data-category="casual" data-icon="💭" data-title="Would You Rather"><div class="game-art art-rather">☁ <span>♡</span> ☁</div><div class="game-meta"><span>GET TO KNOW</span><b>Would You Rather</b><small>Choose one. Defend your answer.</small></div><button class="play-button" data-game="Would You Rather">Play together ↗</button></article>
+          <article class="game-card" data-name="drawing draw" data-category="creative" data-icon="✎" data-title="Drawing Together"><div class="game-art art-draw">✎ <span>〰</span></div><div class="game-meta"><span>CREATIVE</span><b>Drawing Together</b><small>One canvas, two imaginations.</small></div><button class="play-button" data-game="Drawing Together">Open canvas ↗</button></article>
+          <article class="game-card" data-name="spin wheel" data-category="casual" data-icon="🎡" data-title="Spin the Wheel"><div class="game-art art-wheel">✿<span>✦</span>♡</div><div class="game-meta"><span>JUST FOR FUN</span><b>Spin the Wheel</b><small>Let fate decide your next little plan.</small></div><button class="play-button" data-game="Spin the Wheel">Play together ↗</button></article>
+        </div>
+        <div class="coming-note"><span>✧</span><div><b>More games are on the way.</b><small>Ular tangga, Ludo, chess and drawing are in the first planned multiplayer set. Online turns will activate after backend setup.</small></div></div>
+      </section>
+
+      <section class="page-section" id="booth">
+        <div class="page-intro"><div class="eyebrow">KEEP A LITTLE MOMENT</div><h1>Photo <em>booth.</em></h1><p>Choose a frame, add your pictures, and make a tiny keepsake.</p></div>
+        <div class="booth-layout">
+          <div class="booth-controls panel">
+            <div class="control-group"><label>01 / CHOOSE YOUR LAYOUT</label><div class="template-options"><button class="template active" data-template="strip">♡<small>Classic 4-cut</small></button><button class="template" data-template="polaroid">▣<small>Polaroid</small></button><button class="template" data-template="film">✦<small>Film strip</small></button><button class="template" data-template="grid">▦<small>Photo grid</small></button><button class="template" data-template="heart">♥<small>Sweetheart</small></button><button class="template" data-template="date">☾<small>Date night</small></button></div></div>
+            <div class="control-group"><label>02 / ADD YOUR PHOTOS</label><label class="upload-button" for="photo-upload">＋ Choose photos <input id="photo-upload" type="file" accept="image/*" multiple hidden /></label><small class="helper">Select up to 4 pictures. This preview stays in your browser.</small></div>
+            <div class="control-group"><label>03 / ADD A LITTLE NOTE</label><input class="text-input" id="booth-caption" maxlength="36" value="our little moments ♡" /></div>
+            <div class="control-group"><label>04 / PICK A MOOD</label><div class="mood-options"><button class="mood active" data-mood="pink">Rose</button><button class="mood" data-mood="cream">Cream</button><button class="mood" data-mood="lilac">Lilac</button><button class="mood" data-mood="mint">Mint</button></div></div>
+            <button class="btn btn-primary full" id="download-booth">Download photo strip ↓</button>
+          </div>
+          <div class="booth-preview-wrap"><div class="preview-label">YOUR LITTLE MASTERPIECE <span>LIVE PREVIEW</span></div><div class="booth-canvas mood-pink" id="booth-canvas"><div class="photo-slots" id="photo-slots"><div class="photo-slot">♡<small>your photo</small></div><div class="photo-slot">✦<small>your photo</small></div><div class="photo-slot">♡<small>your photo</small></div><div class="photo-slot">✧<small>your photo</small></div></div><div class="booth-caption" id="caption-preview">our little moments ♡</div><div class="booth-date" id="booth-date"></div></div><p class="preview-tip">A small memory, saved just for you two.</p></div>
+        </div>
+      </section>
+
+      <section class="page-section" id="draw">
+        <div class="page-intro"><div class="eyebrow">MAKE SOMETHING SILLY</div><h1>Drawing <em>room.</em></h1><p>Draw your masterpiece. The other person can join this canvas once realtime is connected.</p></div>
+        <div class="drawing-panel panel">
+          <div class="drawing-toolbar"><div class="tool-colors"><button class="color-dot selected" data-color="#e98ba9" style="--dot:#e98ba9"></button><button class="color-dot" data-color="#5e86b5" style="--dot:#5e86b5"></button><button class="color-dot" data-color="#6b9c83" style="--dot:#6b9c83"></button><button class="color-dot" data-color="#272b39" style="--dot:#272b39"></button><button class="color-dot" data-color="#e7b65c" style="--dot:#e7b65c"></button></div><label class="brush-size">Brush <input id="brush-size" type="range" min="2" max="24" value="6"></label><button class="btn btn-outline btn-small" id="clear-draw">Clear canvas</button></div>
+          <canvas id="drawing-canvas" width="1100" height="620"></canvas>
+          <div class="drawing-foot"><span>✎ Made by you, for your favorite person.</span><button class="text-button" id="save-drawing">Download drawing ↓</button></div>
+        </div>
+      </section>
+
+      <section class="page-section" id="memories">
+        <div class="page-intro"><div class="eyebrow">LITTLE THINGS, BIG FEELINGS</div><h1>Our <em>memories.</em></h1><p>A place for the moments you want to keep close.</p></div>
+        <div class="memory-empty panel"><div class="memory-illustration">♡<span>✦</span></div><h2>Our story goes here.</h2><p>Photobooth pictures and little notes can become your shared memory wall after Supabase Storage is connected.</p><a href="#booth" class="btn btn-primary">Make your first memory ↗</a></div>
+      </section>
+
+      <footer class="footer"><span>H&I <b>♡</b> made for two, wherever you are.</span><span>OUR LITTLE UNIVERSE · 2026</span></footer>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true">
+    <div class="modal">
+      <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+      <div class="modal-symbol" id="modal-symbol">♡</div>
+      <div class="eyebrow">A LITTLE INVITATION</div>
+      <h2 id="modal-title">Invite your player.</h2>
+      <p id="modal-copy">Create a room and send Ike an invitation to join.</p>
+      <div class="room-code" id="room-code">H I - 2 0 2 6</div>
+      <button class="btn btn-primary full" id="modal-action">Copy room code</button>
+      <small class="modal-footnote">Preview mode only. Real invitations will work after Supabase setup.</small>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
